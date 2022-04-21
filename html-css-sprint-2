@@ -2,28 +2,23 @@
 <html>
 <head>
   <title>Classes and ID's</title>
+  <link href="styles/main.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
-<h1>Classes vs ID</h1>
-<h2>What is a class and what is an ID?</h2>
-<p></p>
+<h1>Classes vs id</h1>
+<h2>What is a class and what is an id?</h2>
+<h3><u>id</u> and <u>class</u> attributes are used to style elements, 
+  they are known as id and class selectors</h3>
+  <p><u>Class</u> allows you to use the same css style on multiple elements, where as an 
+    <u>id</u> attribute is not reusable and should only be applied to one element. 
+    It is important to note that id attributes have more importance than a class attribute so 
+    if you are applying both a class and id attribute to the same element
+    the styles of the id will always be applied. </p>
+    <p>id elements will always have a # in front of it when applying it in css </p>
+    <div>   
+    </div>
+    
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
