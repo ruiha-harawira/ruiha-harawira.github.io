@@ -15,10 +15,9 @@ h1 {
   box-shadow: 20px 10px 10px;
   width: 600px;
 
-    position: absolute;
-    background: lavender;
-    top: 30px;
-    left: 30px;
+  position: fixed;
+  top: 80px;
+  left: 10px;
 }
 button {
   background-color: off-white;
