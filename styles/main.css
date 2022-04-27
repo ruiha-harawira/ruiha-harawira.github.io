@@ -5,6 +5,7 @@ body {
   font-size: 20px;
   text-align: left;
   padding: 80px;
+  position: static;
  
 
 }
@@ -15,6 +16,9 @@ h1 {
   font-size: 80px;
   box-shadow: 20px 10px 10px;
   width: 600px;
+  position: absolute
+  top: 0px;
+  left: 0px;
 
 
  
