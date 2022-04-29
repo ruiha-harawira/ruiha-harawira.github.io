@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript and the DOM</title>
+  <link href="../styles/main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<h1>Javascript and the DOM</h1>
+<p><em>HTML is the skeleton of your body, CSS is the skin, Javascript is 
+  the brain making everything move and function.</em></p>
+<p>Control flow and loops:</p>
+<p>Control flow is the order in which instructions in your programme are executed. 
+  Loops allows you to repeat an action a number of times without having to type them 
+  in again and again.</p>
+<p>In a real life scenario let's say for example a baker that is icing some cookies the 
+  action would be 
+  <ol>
+   <li> Squeeze a dot of icing onto a cookie </li>
+   <li> If there are no more cookies, takes a break </li>
+   <li> Goes back to step 1</li>
+  </ol>
+  And that is repeated until all the cookies are finished being iced.
+  Loops in programming are similar you execute the same instructions until the job is done.
+</p>
+<p>The DOM</p>
+<p>The special glue that ties HTML, CSS and java script together is the document object model 
+    or the 'DOM' Everything that makes up your DOM is known as nodes 
+    These nodes can be anything from:
+  <ul>
+    <li>elements</li>
+    <li>Attributes</li>
+    <li>Text content</li>
+    <li>Documents</li>
+   </ul> And many other things that we don't think about
+</p>
+<p>So how do you access html to manipulate it?
+   Depending on what you are wanting to do an easy way to make things easier to grab is by giving
+   them unique ID's, or putting the things you want to manipulate in the same class so that they 
+   are easier to access. 
+</p>
+<p>We can use a few things like 
+  <ul>
+    <li>getElementsByTagName(p, div)</li>
+    <li>getElementsByClassName</li>
+    <li>getElementsbyId()</li>
+    <li>getElementsbyName</li>
+    <li>getElementsByTagNameNS</li>
+  </ul>
+</p>
+<p>To start off say you are wanting to grab an <pre><code>&lt;h1&gt;</code> </pre>element you would use <b>document.querySelector('h1')</b>.
+   If you wanted to grab all of your paragraphs you can use another method like this <b>document.querySelectorAll('p')</b> 
+   which will return an array of matching <pre><code>&lt;p&gt;</code></pre> elements otherwise <b>querySelector('p')</b> 
+   will return the first paragraph 
+   element on your HTML
+</p>
+<p>Another useful tip is changing text in HTML we can use the innerHTML method along with many other useful methods 
+   to change and manipulate your HTML. The DOM is not a part of java script language, it is a form of web API. It represents the page so that we can 
+   change the structure, style, and content on the page. 
+</p>
+<p>Objects vs arrays:</p>
+<p>Objects is a container used to display data types that store a collection of data. Arrays are a special type of 
+   variable used to store a list of values. We use arrays when we want to create a list of things in a single variable 
+   say we want to store all of our favourite foods the array would look something like </p>
+<p><pre><code>favouriteFoods = [ 'Noodles', 'burgers', 'fruit', 'sushi'];</code></pre></p>
+<p>Here we are listing an array of our favourite foods in a single variable. Now lets make an object for myself it would 
+   look something like this 
+</p>
+<div><p>
+  <pre><code>
+    var human = { 
+      name: 'Ruiha',
+      lastName: 'Harawira'
+      Age: 25,
+    }
+</code></pre>
+</p></div>
+<p>Here I have stored a collection of data about myself inside an object. Another example of declaring objects could look 
+   something like this we will refer to our javascript cafe tutorial </p>
+<div><p>
+    <pre>
+    <code>
+      let products = {
+          whiteCoffee: {
+                stock: 4,
+                price: 4,
+                },
+          blackCoffee: {
+                stock: 7,
+                price: 3.5,
+                },
+    </code>
+    </pre>
+</p></div>
+<p>Here we are declaring the object products which include whiteCoffee, blackCoffee and the price and stock of each of those items.</p>
+<p>Functions:</p>
+<p>Functions are one of fundamental building blocks in javascript. A function is a set of statements that performs a task or 
+  return a value. Lets have a look at an example below, say we want the function to display a message on the console we would 
+  write something like this.
+</p>
+<div><p>
+  <pre>
+  <code>
+    function greet () {
+      console.log('Kia Ora Dev academy');
+   }
+  </code>
+  </pre>
+</p></div>
+<p>Here we are asking the function to display 'Kia Ora Dev academy' to the console. If we go back to our earlier example 
+  of objects we could use functions to display our products on to the console like so</p>
+<div><p>
+      <pre>
+      <code>
+          function displayProducts() {
+            document.getElementById('whiteCoffee').innerHTML =
+              'White Coffee: ' + products.whiteCoffee.stock
+          
+            document.getElementById('blackCoffee').innerHTML =
+              'Black Coffee: ' + products.blackCoffee.stock
+     </code>
+     </pre>
+    </p>
+  </div>
+  <p>Here we use function to display our items and also use some methods I mentioned about the DOM by grabbing the element 
+    by its ID and using .innerHTML to change the text. An analogy example of a function would be a recipe for a cake. 
+    The function is the input used to declare all the ingredients and the implementation is the steps to be used to produce
+    the cake.
+    </p>
+
+    <a href="../index.html">Home</a>
+
+  </body>
+  </html>
+
+
+
