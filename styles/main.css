@@ -21,12 +21,19 @@ h1 {
   position: absolute
   top: 0px;
   left: 0px;
-
-
- 
-
+  
 
 }
+h2 {
+font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-weight: solid;
+  font-size: 40px;
+  position: absolute
+  top: 0px;
+  left: 0px;
+}
+
 button {
   background-color: off-white;
   color: black;
